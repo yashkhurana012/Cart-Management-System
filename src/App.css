@@ -1,130 +1,175 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-.App {
+.App{
   padding-bottom: 2rem;
 }
 
-.header {
-  background-color: #2c3e50;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+.box1{
+  position: relative;
+  width: 3rem;
 }
 
-.navbar {
+.box2{
+  position: absolute;
+  top: -18px;
+  right: 0;
+  color: black;
+  height: 28px;
+  width: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FF6347;
+}
+
+header{
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+  color: white;
+}
+
+nav{
+  width: 95%;
   display: flex;
   justify-content: space-between;
+  color: white;
   align-items: center;
-  padding: 10px 5%;
-  background-color: #34495e;
-  color: #fff;
 }
 
-.cart-icon {
+.fa-solid{
+  font-size: 30px;
+  color: wheat;
+}
+
+.cart-count{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cartBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.cartBox1{
+  display: flex;
+  align-items: center;
+}
+
+.cartBox2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cartBox-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.para1{
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
+
+.para2{
+  color: gray;
+}
+
+.remove{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #5396e7;
+  font-size: 18px;
+}
+
+.material-symbols-outlined{
+  font-size: 26px !important;
+  color: #4dafe8;
+  font-weight: 900;
+}
+
+.material-symbols-outlined:hover{
+  color: #1989ab;
+}
+
+main{
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.cartBox22{
+  border-top: 1px solid rgb(60, 73, 138);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.main-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.total{
   font-size: 24px;
 }
 
-.cart-count {
-  font-size: 18px;
-  background-color: #e74c3c;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 50%;
+.total-price{
+  font-size: 24px;
+  background-color: #e7ebee;
+  color: white;
+  border-radius: 3px;
+  padding: 3px 7px;
 }
 
-.cart {
-  display: flex;
-  align-items: center;
-}
-
-.cart-box {
-  margin: 20px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.cart-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.item-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.item-name {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.item-price {
-  color: #27ae60;
-  font-weight: bold;
-}
-
-.remove-btn {
-  background-color: #e74c3c;
-  color: #fff;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.remove-btn:hover {
-  background-color: #c0392b;
-}
-
-.clear-btn {
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Creatively Styled "Clear" Button */
+.clear{
   margin: 20px auto;
+  background-color: #FF6347;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  outline: 0;
+  padding: 15px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  width: 60%;
   display: block;
 }
 
-.clear-btn:hover {
-  background-color: #2980b9;
+.clear:hover {
+  background-color: #9f56d8;
 }
 
-.clear-btn:focus {
-  outline: none;
+.clear:active {
+  transform: translateY(2px);
 }
 
-.empty-cart {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.empty-cart h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.empty-cart p {
-  font-size: 18px;
-  color: #7f8c8d;
-}
-
-.empty-cart img {
-  width: 200px;
+.clear:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
 }
